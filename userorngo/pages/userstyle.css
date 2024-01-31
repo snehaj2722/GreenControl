@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  
+  background-image: url(green.jpg); /* Replace 'your-image-url.jpg' with the actual URL or path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.w3-bar {
+  background-color: #000;
+  color: #fff;
+}
+
+.w3-bar-item:hover {
+  background-color: #333;
+}
+
+/* Sidebar Styles */
+.w3-sidebar {
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.w3-container {
+  padding: 20px;
+}
+
+.w3-container h5 {
+  color: #333;
+}
+
+.w3-bar-block a {
+  padding: 16px;
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.w3-bar-block a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Overlay Styles */
+.w3-overlay {
+  cursor: pointer;
+}
+
+/* Top Container Styles */
+.w3-top {
+  position: sticky;
+  top: 0;
+}
+
+/* Logo Styles */
+.w3-bar-item.w3-right {
+  font-size: 18px;
+  padding: 15px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  .w3-sidebar {
+    width: 100%;
+    display: none;
+    position: fixed;
+  }
+
+  .w3-bar-item.w3-hide-large {
+    display: block;
+  }
+
+  .w3-hide-large {
+    display: none !important;
+  }
+
+  .w3-overlay {
+    display: none;
+  }
+
+  .w3-top {
+    position: relative;
+  }
+}

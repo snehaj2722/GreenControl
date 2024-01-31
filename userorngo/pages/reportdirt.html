@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title>Report</title>
+    <link rel="stylesheet" type="text/css" href="ex1.css">
+    <style>
+      #lat,#long,.token{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <br />
+    <form method="POST" action="reportdirt.html">
+      <!--<label> Firstname </label>
+      <input type="text" name="firstname" size="15" /> <br />
+      <br />
+      <label> Middlename: </label>
+      <input type="text" name="middlename" size="15" /> <br />
+      <br />
+      <label> Lastname: </label>
+      <input type="text" name="lastname" size="15" /> <br />
+      <br /> -->
+
+      <label> Report type : </label>
+      <select name="type">
+        <option value="with bin">Area With/Without Bins</option>
+        <option value="no bin">Large Area</option>
+      </select>
+
+      <br />
+      <br />
+      <br />
+
+      Address
+      <br />
+      <textarea cols="80" rows="5" value="address" name=address> </textarea>
+      <br />
+      <br />
+      <label for="img">Select image:</label>
+      <input name="image"type="file" accept="image/*" capture="camera">
+      <input type="text" class=token name="token"value="open">
+      <input type="text" id="lat" name="lat">
+      <input type="text" id="long" name="long" >
+      
+      <p id="demo"></p>
+      
+      
+      <input type="submit" value="Submit" onclick="getLocation()"/>
+     
+    </form>
+  </body>
+</html>
+<script>
+  var x = document.getElementById("demo");
+  function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+      x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+  }
+  
+  function showPosition(position) {
+    document.getElementById("lat").innerHTML=position.coords.latitude;
+    document.getElementById("long").innerHTML=position.coords.longitude;
+    x.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+  }
+  </script>

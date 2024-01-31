@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Report</title>
+  <style>
+    body {
+      background-color: #e2ffbc; /* Background color */
+      color: #150d0d; /* Text color */
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    input[type="file"] {
+      padding: 10px;
+      background-color: #2ecc71; /* Green button background color */
+      color: #fff; /* White text color */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="file"]:hover {
+      background-color: #27ae60; /* Darker green on hover */
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #e74c3c; /* Red button background color */
+      color: #fff; /* White text color */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #c0392b; /* Darker red on hover */
+    }
+  </style>
+</head>
+
+<body>
+  <p>This is the work done in a week by the cleaner head</p>
+  <p>Click on the "Choose File" button to upload a file:</p>
+
+  <form action="/action_page.php">
+    <input type="file" id="myFile" name="filename">
+    <br><br>
+    <input type="submit">
+  </form>
+</body>
+
+</html> 
+ 
+

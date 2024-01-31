@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TO CREATE NEW TICKET</title>
+  <style>
+    body {
+      background-color: #a3e3fc;
+      color: #333;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      color: #121b21;
+    }
+
+    table {
+      width: 100%;
+      border: 1px solid #333;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #333;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #152f40;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: #ecf0f1;
+    }
+
+    input[type="submit"] {
+      background-color: #8dcef9;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #googleMap {
+      width: 100%;
+      height: 400px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>Open Tickets</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <table>
+          <tr>
+            <th>Type</th>
+            <th>Address</th>
+            <th>Image</th>
+            <th>Token</th>
+            <th>Lat</th>
+            <th>Longitude</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>No Bin</td>
+            <td>Ooty</td>
+            <td>Wallpaper.jpg</td>
+            <td>Close</td>
+            <td>11.127122499999999</td>
+            <td>78.6568942</td>
+            <td><a href="#">Link</a></td>
+          </tr>
+          <tr>
+            <td>With Bin</td>
+            <td>Coimbatore</td>
+            <td>Wallpaper.jpg</td>
+            <td>Close</td>
+            <td>11.127122499999999</td>
+            <td>78.6568942</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <form method="POST" action="openticket.html">
+    <input type="submit" value="Close">
+  </form>
+  <div id="googleMap"></div>
+
+  <script>
+    function myMap() {
+      // This is a placeholder for the Google Maps API
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+</body>
+
+</html>

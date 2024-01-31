@@ -1,0 +1,118 @@
+/* col.css */
+
+/* Global Styles */
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  background-color: #ffcbfc;
+  background-image: url(xy1.jpg); /* Replace 'your-background-image-url.jpg' with the actual URL or path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Top Container Styles */
+.w3-bar.w3-top {
+  background-color: #dea0a0;
+  color: #1f1b1d;
+}
+
+.w3-bar.w3-top button {
+  margin-top: 8px;
+}
+
+.w3-bar.w3-top span {
+  margin-top: 8px;
+}
+
+/* Sidebar Styles */
+.w3-sidebar {
+  width: 300px;
+  background-color: #b0ffea;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/*.w3-sidebar img {
+  width: 46px;
+} */
+
+.w3-sidebar h5 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.w3-sidebar hr {
+  border-color: #d65a5a;
+}
+
+.w3-sidebar a {
+  color: #090508;
+  text-decoration: none;
+  display: block;
+  padding: 16px;
+  transition: background-color 0.3s;
+}
+
+.w3-sidebar a:hover {
+  background-color: #f7f89d;
+}
+
+.w3-sidebar a.w3-padding-16 {
+  color: #fff;
+  background-color: #333;
+}
+
+.w3-sidebar a.w3-padding-16:hover {
+  background-color: #555;
+}
+
+/* Overlay Styles */
+.w3-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  .w3-sidebar {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 3;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .w3-sidebar img {
+    width: 80px;
+    margin: 20px;
+  }
+
+  .w3-sidebar a {
+    float: left;
+    width: 50%;
+  }
+
+  .w3-sidebar hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

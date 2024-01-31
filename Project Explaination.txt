@@ -1,0 +1,24 @@
+HOYA HACKS 2020-2021
+
+PROBLEM: Geo Tracking of Waste and Triggering Alerts and Mapping Areas with High Waste Index.
+
+SOLUTION:
+
+"A young man returns to his home town after 10years, he is astonished to see cleaners taking a photo of the cleaned area. 
+He asks his mom what are they doing? His mom states that "This is the improvement which happened in this years to clean the society -iGreen ".
+His mind started to think "What is this iGreen?".He started to surf the net and say a video. 
+The video's idea to convey was if you find dirt nearby just help us by uploading an image then it's our duty to clean it. 
+He started to dig in more to know about the process by visiting the site. He went found some garbage uploaded its photo. 
+Then it asked for location co-ordinates for which he gave access. 
+After the confirmation that the photo he uploaded consists of garbage then a ticket is created message was shown to him. 
+After some time he received a message to confirm whether the area is cleaned completely. 
+When he clicked agree there comes a message your ticket is successfully closed and you helped us clean a location. 
+Now he understood the process. He also found more in the site like DIY videos, News and Updates, LeaderBoard of their society. 
+He wanted to know how it is notified so he digs in more where he realized that when a ticket has created the map of cleaner 
+gets pinned and the cleaners go there by following the map upload the cleaned image to complete the process."
+
+
+A user-friendly software application is built. This application collects images from users then the image passes through the verification process. 
+New Ticket is created if it is verified. After waste is cleaned ticket closes. 
+For more details please look into our mindmap attached.
+

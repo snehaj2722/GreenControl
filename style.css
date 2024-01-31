@@ -1,0 +1,119 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  background: #eaf2f8 url(earth.jpg) center/contain repeat;
+  color: #333;
+  font: 16px 'Arial', sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 50px auto;
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+}
+
+#content {
+  background: #29251d;
+  background: black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  padding: 25px 20px 30px;
+  text-align: center;
+  width: 80%;
+}
+
+#content h1 {
+  color: #3498db;
+  color: #ffff00;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#content form {
+  margin: 0;
+}
+
+#content form input[type="text"],
+#content form input[type="password"],
+#content form select {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #555;
+  font-size: 16px;
+  margin: 0 0 15px;
+  padding: 10px;
+  width: 100%;
+}
+
+#content form input[type="submit"] {
+  background: #3498db;
+  background: #ffff00;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+#content form input[type="submit"]:hover {
+  background: #2980b9;
+  background: #ffff00;
+}
+
+#content form div a {
+  color: #3498db;
+  color: #ffff00;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+#content form div a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.button a {
+  background: url(https://cssdeck.com/uploads/media/items/8/8bcLQqF.png) 0 -112px no-repeat;
+  color: #3498db;
+  color: #ffff00;
+  display: inline-block;
+  font-size: 18px;
+  margin-top: 10px;
+  padding: 5px 0 5px 40px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.button a:hover {
+  background-position: 0 -135px;
+  color: #2980b9;
+  color: #c2c24f;
+}

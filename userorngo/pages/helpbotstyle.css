@@ -1,0 +1,75 @@
+/* help.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a5ccfa;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #a5ccfa;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.accordion {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.accordion i {
+    float: right;
+}
+
+.panal {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.panal p {
+    color: #555;
+}
+
+/* Hover effect for accordion */
+.accordion:hover {
+    background-color: #217dbb;
+}
+
+/* Active state for accordion */
+.accordion.active {
+    background-color: #1e63a9;
+}
+
+/* Style for FontAwesome icons */
+.fa-minus,
+.fa-plus {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Style for contact and address information */
+p {
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Style for contact number */
+p:first-of-type {
+    font-weight: bold;
+}
+
+/* Style for address */
+p:last-of-type {
+    margin-bottom: 50px;
+}
+

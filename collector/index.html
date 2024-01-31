@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iGreen Site</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(bg2.jpg) center center fixed; /* Background image */
+            background-size: cover;
+            color: #333; /* Dark gray text color */
+            text-align: center;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            margin: 0;
+        }
+
+        /* Top container styling */
+        .w3-bar.w3-top {
+            background-color: #3498db; /* Bright blue top bar background color */
+            color: #fff; /* White top bar text color */
+        }
+
+        .w3-bar.w3-top a {
+            color: #fff; /* White top bar link color */
+        }
+
+        /* Sidebar styling */
+        .w3-sidebar {
+            width: 300px;
+            background-color: #2c3e50; /* Dark bluish sidebar background color */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+            color: #ecf0f1; /* Light grayish blue text color */
+        }
+
+        .w3-sidebar a {
+            display: block;
+            padding: 16px;
+            text-decoration: none;
+            color: #ecf0f1; /* Light grayish blue text color */
+        }
+
+        .w3-sidebar a:hover {
+            background-color: #34495e; /* Darker bluish background color on hover */
+        }
+
+        /* Content container styling */
+        .w3-light-grey {
+            background-color: rgba(255, 255, 255, 0.8); /* Light grayish blue content background color with transparency */
+            padding: 20px;
+        }
+
+        /* Overlay styling */
+        .w3-overlay {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+        }
+
+        /* Custom styling for buttons */
+        .w3-button {
+            color:black; /* White text color */
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .w3-button-primary {
+            background-color: #3498db; /* Bright blue button background color */
+        }
+
+        .w3-button-primary:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+        }
+
+        .w3-button-success {
+            background-color: #2ecc71; /* Green button background color */
+        }
+
+        .w3-button-success:hover {
+            background-color: #27ae60; /* Darker green on hover */
+        }
+
+        .w3-button-danger {
+            background-color: #e74c3c; /* Red button background color */
+        }
+
+        .w3-button-danger:hover {
+            background-color: #c0392b; /* Darker red on hover */
+        }
+
+        .w3-button-warning {
+            background-color: #f39c12; /* Orange button background color */
+        }
+
+        .w3-button-warning:hover {
+            background-color: #d35400; /* Darker orange on hover */
+        }
+
+        .w3-button-info {
+            background-color: #3498db; /* Bright blue button background color */
+        }
+
+        .w3-button-info:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+        }
+    </style>
+</head>
+
+<body class="w3-light-grey">
+    <!-- Top container -->
+    <div class="w3-bar w3-top">
+        <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey"
+            onclick="w3_open();">
+            <i class="fa fa-bars"></i> Menu
+        </button>
+    </div>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse">
+        <br />
+        <div class="w3-container w3-row">
+            <div class="w3-col s4">
+                <img src="C:\Users\91636\Desktop\GreenControl/avator2.avif" class="w3-circle w3-margin-right" style="width: 46px" />
+            </div>
+            <div class="w3-col s8 w3-bar">
+                <span>Welcome, <strong>Cleaner</strong></span><br />
+                <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+                <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
+                <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a>
+            </div>
+        </div>
+        <hr />
+        <div class="w3-container">
+            <h5>Dashboard</h5>
+        </div>
+        <div class="w3-bar-block">
+            <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black"
+                onclick="w3_close()" title="close menu">
+                <i class="fa fa-remove fa-fw"></i> Close Menu
+            </a>
+            <a href="pages/profile.html" class="w3-bar-item w3-button w3-padding w3-button-primary">
+                <i class="fa fa-user" aria-hidden="true"></i> Profile
+            </a>
+            <a href="pages/map.html" class="w3-bar-item w3-button w3-padding w3-button-success">
+                <i class="fa fa-map-marker" aria-hidden="true"></i> Locality Map
+            </a>
+            <a href="pages/tickets.html" class="w3-bar-item w3-button w3-padding w3-button-danger">
+                <i class="fa fa-ticket" aria-hidden="true"></i> Tickets
+            </a>
+            <a href="pages/list.html" class="w3-bar-item w3-button w3-padding w3-button-warning">
+                <i class="fa fa-list" aria-hidden="true"></i> List Of People Working
+            </a>
+            <a href="pages/report.html" class="w3-bar-item w3-button w3-padding w3-button-info">
+                <i class="fa fa-flag-o" aria-hidden="true"></i> Reports
+            </a>
+            <a href="pages/Infoarea.html" class="w3-bar-item w3-button w3-padding w3-button-primary">
+                <i class="fa fa-info" aria-hidden="true"></i> Info Area
+            </a>
+            <a href="pages/Approval.html" class="w3-bar-item w3-button w3-padding w3-button-success">
+                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Approval
+            </a>
+            <a href="pages/HelpBot.html" class="w3-bar-item w3-button w3-padding w3-button-danger">
+                <i class="fa fa-question-circle" aria-hidden="true"></i> Help-Bot
+            </a>
+            <a href="#" class="w3-bar-item w3-button w3-padding w3-button-warning">
+                <i class="fa fa-cog fa-fw"></i> Logout
+            </a>
+            <br /><br />
+        </div>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <script>
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
+
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function w3_open() {
+            if (mySidebar.style.display === "block") {
+                mySidebar.style.display = "none";
+                overlayBg.style.display = "none";
+            } else {
+                mySidebar.style.display = "block";
+                overlayBg.style.display = "block";
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+            overlayBg.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

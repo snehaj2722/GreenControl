@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="ex2.css"rel="stylesheet" media="all">
+  </head>
+  <body>
+    <form>
+      <label> Name </label>
+      <input type="text" name="firstname" size="15" /> <br />
+      <br />
+      Address
+      <br />
+      <textarea cols="80" rows="5" value="address"> </textarea>
+      <br />
+      
+      <label> Time They missed to come: </label>
+      <select>
+        <option value="">1hr-3hr</option>
+        <option value="">4hr-6hr</option>
+        <option value="">7hr-9hr</option>
+        <option value="">10hr-12hr</option>
+        <option value="">13hr-15hr</option>
+        <option value="">16hr-18hr</option>
+        <option value="">19hr-21hr</option>
+        <option value="">22hr-24hr</option>
+        <option value="">More than a day</option>
+      
+      </select>
+        <input type="button" onclick="myFunc()" value="Submit" />  
+        
+    </form>
+  </body>
+</html>
+<script>
+  function myFunc() {
+    alert("Successfully Submited");
+  }
+</script>
